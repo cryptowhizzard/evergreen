@@ -33,4 +33,4 @@ propose.php ( Run this regularly to make proposals of the things you have downlo
 import.php ( Run this in a screen in a While loop -> while true; do php import.php; sleep 5; done ). It will import the car files downloaded into your miner.
 Again, please adjust settings in this file to avoid overloading your system.
 
-For any Questions feel free to contact me on Slack or by e-mail ( info@dcent.nl ).
+For any Questions feel free to contact me on the Filecoin Slack (wijnandschouten) or by e-mail ( info@dcent.nl ).
