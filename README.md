@@ -1,5 +1,5 @@
 These set of scripts are written by to help the #filecoin #slingshot-evergreen project to enable automation for retrievals.
-Special thanks to @Ribasushi for his work done developping the #slingshot-evergreen program.
+Special thanks to @Ribasushi for his work done on developping the #slingshot-evergreen program.
 
 All scripts are Dual-licensed under MIT + Apache 2.0. If you use it and have impovements please do contact me on slack and/or create Pull requests.
 
