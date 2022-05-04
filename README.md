@@ -17,22 +17,21 @@ The current set consists of :
 init.sql ( Use this to create your database ).
 
 Autopledge.sh. This script looks in your farcaster file how many PC1/AP is open and puts it in status.html. The following files use this info to decide
-if they run or not ( to avoid overloading your setup ).
+if they run or not ( to avoid overloading your setup ). Cron it.
 
-listen.php. ( Run this at the first time in a screen like /usr/bin/php listen.php ). When it works ok, cron it once in 24 hours. Ask / Read in the Slack channel 
-regularly to check if this is appropiate. This script will fill your database with deals to be fetched.
-local.php. Same as listen.php but then only for the deals valid on your own miner.
+listen.php. ( Run this at the first time in a screen like /usr/bin/php listen.php ). When it works ok, cron it once in 24 hours. Ask / Read in the Slack channel regularly to check if this is appropiate or needs to be done more/less often. This script will fill your database with deals to be fetched.
+
+local.php. Same as listen.php but then only for the deals valid on your own miner. ( Please edit the settings! )
 
 minercheck.php ( Run this regularly with cron to see if SP's are alive for retrieval ).
 
 updatedownloaded.php ( Run this regularly with cron to make the database aware of the files you have downloaded ).
 
 download.sh ( Run this in a screen in a While loop -> while true; do php download.sh; sleep 5; done ). Check the settings is this file to adjust how many
-parallel downloads you want to have.
+parallel downloads you want to have. As the retrievals will improve you will probably need to lower parallelism over the course of days/weeks.
 
-propose.php ( Run this regularly to make proposals of the things you have downloaded.
+propose.php ( Run this regularly to make proposals of the things you have downloaded and send them to the system ).
 
-import.php ( Run this in a screen in a While loop -> while true; do php import.php; sleep 5; done ). It will import the car files downloaded into your miner.
-Again, please adjust settings in this file to avoid overloading your system.
+import.php ( Run this in a screen in a While loop -> while true; do php import.php; sleep 5; done ). It will import the car files downloaded into your miner. Again, please adjust settings in this file to avoid overloading your system.
 
 For any Questions feel free to contact me on the Filecoin Slack (wijnandschouten) or by e-mail ( info@dcent.nl ).
