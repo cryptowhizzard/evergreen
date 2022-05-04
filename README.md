@@ -24,6 +24,7 @@ regularly to check if this is appropiate. This script will fill your database wi
 local.php. Same as listen.php but then only for the deals valid on your own miner.
 
 minercheck.php ( Run this regularly with cron to see if SP's are alive for retrieval ).
+updatedownloaded.php ( Run this regularly with cron to make the database aware of the files you have downloaded ).
 
 download.sh ( Run this in a screen in a While loop -> while true; do php download.sh; sleep 5; done ). Check the settings is this file to adjust how many
 parallel downloads you want to have.
